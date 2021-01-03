@@ -13,12 +13,12 @@ Update gurobi to the latest version (now 9.1.1)
 **********
 
 **********
-Get Clique-Extended-Formulation codes from 
-https://github.com/MohNaderi/Clique-Extended-formulation
+Get Worst-case-analysis-of-clique-MIPs codes from 
+https://github.com/MohNaderi/Worst-case-analysis-of-clique-MIPs.git
 **********
 
 **********
-Providing path to Clique-Extended-Formulation codes
+Providing path to Worst-case-analysis-of-clique-MIPs codes
 **********
 
 
