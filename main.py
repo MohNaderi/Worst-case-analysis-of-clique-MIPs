@@ -67,4 +67,5 @@ if __name__=="__main__":
     if program.is_alive():
         with open("resultsforclique.csv",'a',newline='') as csvfile:
             csvwriter = csv.writer(csvfile)
-            csvwriter.writerow(["MC"])
+            csvwriter.writerow([sys.argv[2].split('-')[1], sys.argv[1].split('.')[0],
+                                "MC", "MC","MC","MC","MC","MC","MC","MC","MC","MC"])
