@@ -17,8 +17,6 @@ def timeis(func):
             sys.stderr.write(" %s %.2f " %(func.__name__, timer))
         return inner
             
-
-
 class formulation:
 
     G = 0
@@ -140,7 +138,8 @@ class conflict(formulation):
         if 3 * (comb(self.G.n, 2) - self.G.m) + self.G.n >= self.threshold:
             with open("resultsforclique.csv",'a',newline='') as csvfile:
                 csvwriter = csv.writer(csvfile)
-                csvwriter.writerow(["c",self.name,"Model is too large. Aborting."])
+                csvwriter.writerow(["c",self.name,self.G.n, self.G.m, self.G.d ,"NA", "Abort before build",
+                                    "NA","NA","NA","NA","NA"])
                 sys.exit(0)
         
         self.model.modelname="c"
@@ -177,7 +176,8 @@ class sparse(formulation):
         if 5*self.G.n + self.G.m >= self.threshold:
             with open("resultsforclique.csv",'a',newline='') as csvfile:
                 csvwriter = csv.writer(csvfile)
-                csvwriter.writerow(["s",self.name,"Model is too large. Aborting."])
+                csvwriter.writerow(["s", self.name, self.G.n, self.G.m, self.G.d ,"NA", "Abort before build",
+                                    "NA","NA","NA","NA","NA"])
                 sys.exit(0)
 
         self.model.modelname="s"
@@ -212,7 +212,8 @@ class conflictBalas(formulation):
       #  if 3 * self.G.n*comb(self.G.d, 2) + 4*self.G.n + 2*self.G.m >= self.threshold:
        #     with open("resultsforclique.csv",'a',newline='') as csvfile:
         #        csvwriter = csv.writer(csvfile)
-          #      csvwriter.writerow(["cB",self.name,"Model is too large. Aborting."])
+          #      csvwriter.writerow(["cB",self.name,self.G.n, self.G.m, self.G.d ,"NA", "Abort before build",
+          #                         "NA","NA","NA","NA","NA"])
            #     sys.exit(0)
         
         self.model.modelname="cB"
@@ -264,7 +265,8 @@ class sparseJeroslow(formulation):
         if 4*self.G.n + self.G.m >= self.threshold:
             with open("resultsforclique.csv",'a',newline='') as csvfile:
                 csvwriter = csv.writer(csvfile)
-                csvwriter.writerow(["sJ",self.name,"Model is too large. Aborting."])
+                csvwriter.writerow(["sJ",self.name,self.G.n, self.G.m, self.G.d ,"NA", "Abort before build",
+                                    "NA","NA","NA","NA","NA"])
                 sys.exit(0)
                 
         self.model.modelname="sJ"       
