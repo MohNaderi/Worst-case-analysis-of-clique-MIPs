@@ -262,7 +262,7 @@ class sparseJeroslow(formulation):
 
         super().__init__(graph)
         
-        if 4*self.G.n + self.G.m >= self.threshold:
+        if 9*self.G.n + 2*self.G.m >= self.threshold:
             with open("resultsforclique.csv",'a',newline='') as csvfile:
                 csvwriter = csv.writer(csvfile)
                 csvwriter.writerow(["sJ",self.name,self.G.n, self.G.m, self.G.d ,"NA", "Abort before build",
