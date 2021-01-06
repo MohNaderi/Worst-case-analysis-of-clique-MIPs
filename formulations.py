@@ -59,13 +59,6 @@ class formulation:
             solveTime=endSolving-startSolving
             sys.stderr.write("%.2f "%solveTime)
             
-    
-            for v in self.x:#what is this for?
-                v.vtype = grb.GRB.CONTINUOUS   #what is this for?
-    
-            for v in self.y:    
-                v.vtype = grb.GRB.CONTINUOUS
-            
             status = self.model.getAttr(grb.GRB.Attr.Status)
             nonzerosCount = self.model.getAttr(grb.GRB.Attr.NumNZs)
             LPbound = self.model.getAttr(grb.GRB.Attr.ObjBound)
