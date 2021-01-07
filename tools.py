@@ -147,7 +147,7 @@ class Graph:
             self.leftNeigh[i].sort()
             self.rightNeigh[i].sort()
         
-            
+    #this function is basically wrote by "https://www.geeksforgeeks.org/bipartite-graph/"        
     def isBipartite(self): 
 
         # Create a color array to store colors  
