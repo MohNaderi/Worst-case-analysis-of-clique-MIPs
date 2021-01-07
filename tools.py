@@ -2,7 +2,7 @@
 class Graph:
     
     def __init__(self, *args, **kwargs):
-    #def __init__(self,inputfile):
+   
         try:
             self.n = 0
             self.m = 0
@@ -43,7 +43,6 @@ class Graph:
                     self.Delta = self.degree[i]
     
             inputfile = kwargs.get('inputfile').split('/')
-            #inputfile = inputfile.split('/')
             self.name = inputfile[len(inputfile)-1]
         except:
             self.n=kwargs.get('numNodes')
@@ -54,10 +53,7 @@ class Graph:
                 self.adjLists.append([])
                 
             self.degree = [0]*self.n
-       # try:
-       #     self.n=kwargs.get('numNodes')
-       # except:
-       #     pass
+       
 
     
     
