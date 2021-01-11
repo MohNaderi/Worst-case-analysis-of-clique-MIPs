@@ -1,4 +1,4 @@
-# Codes for "Worst-case analysis of clique MIPs"
+# Codes for "Worst-case analysis of clique MIPs" by Mohammad Javad Naderi, Austin Buchanan, Jose L. Walteros
 Paper is available here:
 http://www.optimization-online.org/DB_HTML/2021/01/8198.html
 
