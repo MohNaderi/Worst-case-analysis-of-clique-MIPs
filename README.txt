@@ -2,7 +2,6 @@
 Paper is available here:
 http://www.optimization-online.org/DB_HTML/2021/01/8198.html
 
-
 Running the code via python interpreter
 =============
 
